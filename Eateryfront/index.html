@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="application/javascript" src="js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+    <script type="application/javascript" src="js/script.js"></script>
+    <link rel="icon" type="image/png" href="img/favico.png" />
+    <title>Eatery</title>
+</head>
+<body>
+    <header>
+
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand logoa" href="index.html">Ob's Eatery <img class="logo" src="img/logo_white.png" alt="index.html"> </a>
+                <div id="mnav">
+                    <ul  class="navbar-nav mr-auto mt-2 mt-lg-0 ">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <!--<li class="nav-item cxn">
+                          <a class="nav-link disabled" href="#">Inscription</a>
+                        </li>-->
+                        <li class="nav-item cxn">
+                            <a class="nav-link disabled"  href="#signup" data-toggle="modal" data-target=".bs-modal-sm">Inscription / Connection</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="content">
+        <div class="recherche">
+            <div class="blanko">
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <h2 class="nous">Découvrez & Réservez les meilleurs restaurants, merci à nos développeurs Java J2E</h2>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <form action="">
+                            <div class="group">
+                                <input type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Ville</label>
+                            </div>
+                            <div class="group">
+                                <input type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Restaurant</label>
+                            </div>
+                            <div class="group">
+                                <input type="text" required>
+                                <span class="highlight"></span>
+                                <span class="bar"></span>
+                                <label>Style de cuisine</label>
+                            </div>
+                            <div class="group">
+                                <button type="button" class="btn btn-light formbt">Recherché</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+        </div>
+        <div class="articleList">
+            <div class="blanko">
+                <div class="row plus">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <h2 class="product">La confiance de nos partenaires </h2>
+                        <div class="thums">
+                            <article class="restaudeouf">
+                                <a class="imgbase" href=""><img src="img/1.jpg" alt=""></a>
+                                <div class="coms">
+                                    <h3><a href="">Conflans</a></h3>
+                                </div>
+                            </article>
+                            <article class="restaudeouf">
+                                <a class="imgbase" href=""><img src="img/2.jpg" alt=""></a>
+                                <div class="coms">
+                                    <h3><a href="">Paris</a></h3>
+                                </div>
+                            </article>
+                            <article class="restaudeouf">
+                                <a class="imgbase" href=""><img src="img/3.jpg" alt=""></a>
+                                <div class="coms">
+                                    <h3><a href="">Le cucu de Nico</a></h3>
+                                </div>
+                            </article>
+                            <article class="restaudeouf">
+                                <a class="imgbase" href=""><img src="img/4.jpg" alt=""></a>
+                                <div class="coms">
+                                    <h3><a href="">Viking</a></h3>
+                                </div>
+                            </article>
+                            <article class="restaudeouf">
+                                <a class="imgbase" href=""><img src="img/5.jpg" alt=""></a>
+                                <div class="coms">
+                                    <h3><a href="">Franklin</a></h3>
+                                </div>
+                            </article>
+                            <article class="restaudeouf">
+                                <a class="imgbase" href=""><img src="img/6.jpg" alt=""></a>
+                                <div class="coms">
+                                    <h3><a href="">Paris</a></h3>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--  Modal Co/inscri -->
+
+    <div class="modal fade bs-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <br>
+                <div class="bs-example bs-example-tabs">
+                    <ul id="myTab" class="nav nav-tabs">
+                        <li class="active"><a href="#signin" data-toggle="tab">Inscription</a></li>
+                        <li class=""><a href="#signup" data-toggle="tab">Connection</a></li>
+                    </ul>
+                </div>
+                <div class="modal-body">
+                    <div id="myTabContent" class="tab-content">
+                        <div class="tab-pane fade active in" id="signin">
+                            <form class="form-horizontal">
+                                <fieldset>
+                                    <!-- Sign In Form -->
+                                    <!-- Text input-->
+                                    <div class="control-group">
+                                        <label class="control-label" for="userid">Alias:</label>
+                                        <div class="controls">
+                                            <input required="" id="userid" name="userid" type="text" class="form-control" placeholder="JoeSixpack" class="input-medium" required="">
+                                        </div>
+                                    </div>
+
+                                    <!-- Password input-->
+                                    <div class="control-group">
+                                        <label class="control-label" for="passwordinput">Password:</label>
+                                        <div class="controls">
+                                            <input required="" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="********" class="input-medium">
+                                        </div>
+                                    </div>
+
+                                    <!-- Multiple Checkboxes (inline) -->
+                                    <div class="control-group">
+                                        <label class="control-label" for="rememberme"></label>
+                                        <div class="controls">
+                                            <label class="checkbox inline" for="rememberme-0">
+                                                <input type="checkbox" name="rememberme" id="rememberme-0" value="Remember me">
+                                                Remember me
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Button -->
+                                    <div class="control-group">
+                                        <label class="control-label" for="signin"></label>
+                                        <div class="controls">
+                                            <button id="signin" name="signin" class="btn btn-success">Sign In</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="signup">
+                            <form class="form-horizontal">
+                                <fieldset>
+                                    <!-- Sign Up Form -->
+                                    <!-- Text input-->
+                                    <div class="control-group">
+                                        <label class="control-label" for="Email">Email:</label>
+                                        <div class="controls">
+                                            <input id="Email" name="Email" class="form-control" type="text" placeholder="JoeSixpack@sixpacksrus.com" class="input-large" required="">
+                                        </div>
+                                    </div>
+
+                                    <!-- Text input-->
+                                    <div class="control-group">
+                                        <label class="control-label" for="userid">Alias:</label>
+                                        <div class="controls">
+                                            <input id="userid" name="userid" class="form-control" type="text" placeholder="JoeSixpack" class="input-large" required="">
+                                        </div>
+                                    </div>
+
+                                    <!-- Password input-->
+                                    <div class="control-group">
+                                        <label class="control-label" for="password">Password:</label>
+                                        <div class="controls">
+                                            <input id="password" name="password" class="form-control" type="password" placeholder="********" class="input-large" required="">
+                                            <em>1-8 Characters</em>
+                                        </div>
+                                    </div>
+
+                                    <!-- Text input-->
+                                    <div class="control-group">
+                                        <label class="control-label" for="reenterpassword">Re-Enter Password:</label>
+                                        <div class="controls">
+                                            <input id="reenterpassword" class="form-control" name="reenterpassword" type="password" placeholder="********" class="input-large" required="">
+                                        </div>
+                                    </div>
+
+                                    <!-- Multiple Radios (inline) -->
+                                    <br>
+                                    <div class="control-group">
+                                        <label class="control-label" for="humancheck">Humanity Check:</label>
+                                        <div class="controls">
+                                            <label class="radio inline" for="humancheck-0">
+                                                <input type="radio" name="humancheck" id="humancheck-0" value="robot" checked="checked">I'm a Robot</label>
+                                            <label class="radio inline" for="humancheck-1">
+                                                <input type="radio" name="humancheck" id="humancheck-1" value="human">I'm Human</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Button -->
+                                    <div class="control-group">
+                                        <label class="control-label" for="confirmsignup"></label>
+                                        <div class="controls">
+                                            <button id="confirmsignup" name="confirmsignup" class="btn btn-success">Sign Up</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <center>
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <footer>
+
+    </footer>
+</body>
+</html>
