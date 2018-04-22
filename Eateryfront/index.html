@@ -13,7 +13,6 @@
 </head>
 <body>
     <header>
-
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -29,7 +28,7 @@
                             <a class="nav-link" href="#">Contact</a>
                         </li>
                         <!--<li class="nav-item cxn">
-                          <a class="nav-link disabled" href="#">Inscription</a>
+                          <a class="nav-link disabled" href="#">Réservation</a>
                         </li>-->
                         <li class="nav-item cxn">
                             <a class="nav-link disabled"  href="#signup" data-toggle="modal" data-target=".bs-modal-sm">Inscription / Connection</a>
@@ -54,22 +53,22 @@
                     <div class="col-md-6">
                         <form action="">
                             <div class="group">
-                                <input type="text" required>
+                                <input class="inpCher" type="text" required>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Ville</label>
+                                <label class="labelCher">Ville</label>
                             </div>
                             <div class="group">
-                                <input type="text" required>
+                                <input class="inpCher" type="text" required>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Restaurant</label>
+                                <label class="labelCher">Restaurant</label>
                             </div>
                             <div class="group">
-                                <input type="text" required>
+                                <input class="inpCher" type="text" required>
                                 <span class="highlight"></span>
                                 <span class="bar"></span>
-                                <label>Style de cuisine</label>
+                                <label class="labelCher">Style de cuisine</label>
                             </div>
                             <div class="group">
                                 <button type="button" class="btn btn-light formbt">Recherché</button>
@@ -88,7 +87,7 @@
                         <h2 class="product">La confiance de nos partenaires </h2>
                         <div class="thums">
                             <article class="restaudeouf">
-                                <a class="imgbase" href=""><img src="img/1.jpg" alt=""></a>
+                                <a class="imgbase" href="restaurant.html"><img src="img/1.jpg" alt=""></a>
                                 <div class="coms">
                                     <h3><a href="">Conflans</a></h3>
                                 </div>
@@ -136,13 +135,13 @@
     <!--  Modal Co/inscri -->
 
     <div class="modal fade bs-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-sm">
+        <div class="modal-dialog">
             <div class="modal-content">
                 <br>
                 <div class="bs-example bs-example-tabs">
                     <ul id="myTab" class="nav nav-tabs">
-                        <li class="active"><a href="#signin" data-toggle="tab">Inscription</a></li>
-                        <li class=""><a href="#signup" data-toggle="tab">Connection</a></li>
+                        <li class="active"><a href="#signin" data-toggle="tab">Connection</a></li>
+                        <li class=""><a href="#signup" data-toggle="tab">Inscription</a></li>
                     </ul>
                 </div>
                 <div class="modal-body">
@@ -153,15 +152,15 @@
                                     <!-- Sign In Form -->
                                     <!-- Text input-->
                                     <div class="control-group">
-                                        <label class="control-label" for="userid">Alias:</label>
+                                        <label class="control-label" for="userid">Pseudo:</label>
                                         <div class="controls">
-                                            <input required="" id="userid" name="userid" type="text" class="form-control" placeholder="JoeSixpack" class="input-medium" required="">
+                                            <input required="" id="userid" name="userid" type="text" class="form-control" placeholder="Ba4" class="input-medium" required="">
                                         </div>
                                     </div>
 
                                     <!-- Password input-->
                                     <div class="control-group">
-                                        <label class="control-label" for="passwordinput">Password:</label>
+                                        <label class="control-label" for="passwordinput">Mot de passe:</label>
                                         <div class="controls">
                                             <input required="" id="passwordinput" name="passwordinput" class="form-control" type="password" placeholder="********" class="input-medium">
                                         </div>
@@ -173,7 +172,7 @@
                                         <div class="controls">
                                             <label class="checkbox inline" for="rememberme-0">
                                                 <input type="checkbox" name="rememberme" id="rememberme-0" value="Remember me">
-                                                Remember me
+                                                Se souvenir de moi
                                             </label>
                                         </div>
                                     </div>
@@ -182,7 +181,7 @@
                                     <div class="control-group">
                                         <label class="control-label" for="signin"></label>
                                         <div class="controls">
-                                            <button id="signin" name="signin" class="btn btn-success">Sign In</button>
+                                            <button id="signin" name="signin" class="btn btn-success">Connection</button>
                                         </div>
                                     </div>
                                 </fieldset>
@@ -196,15 +195,15 @@
                                     <div class="control-group">
                                         <label class="control-label" for="Email">Email:</label>
                                         <div class="controls">
-                                            <input id="Email" name="Email" class="form-control" type="text" placeholder="JoeSixpack@sixpacksrus.com" class="input-large" required="">
+                                            <input id="Email" name="Email" class="form-control" type="text" placeholder="Jesuisle@plusfort.com" class="input-large" required="">
                                         </div>
                                     </div>
 
                                     <!-- Text input-->
                                     <div class="control-group">
-                                        <label class="control-label" for="userid">Alias:</label>
+                                        <label class="control-label" for="userid">Pseudo:</label>
                                         <div class="controls">
-                                            <input id="userid" name="userid" class="form-control" type="text" placeholder="JoeSixpack" class="input-large" required="">
+                                            <input id="userid" name="userid" class="form-control" type="text" placeholder="Ba4" class="input-large" required="">
                                         </div>
                                     </div>
 
@@ -241,7 +240,7 @@
                                     <div class="control-group">
                                         <label class="control-label" for="confirmsignup"></label>
                                         <div class="controls">
-                                            <button id="confirmsignup" name="confirmsignup" class="btn btn-success">Sign Up</button>
+                                            <button id="confirmsignup" name="confirmsignup" class="btn btn-success">Inscription</button>
                                         </div>
                                     </div>
                                 </fieldset>
@@ -257,13 +256,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
     <footer>
 
     </footer>
