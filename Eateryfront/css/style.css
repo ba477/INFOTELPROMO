@@ -75,7 +75,7 @@ h2{
     color: #b5e655 !important;
 }
 #content{
-    background-image: url("../img/info.jpg");
+    background-image: url("../img/restau.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 1218px;
@@ -137,7 +137,7 @@ article{
 }
 
 .plus{
-    padding-bottom: 100px;
+    padding-bottom: 224px;
 }
 
 
@@ -261,7 +261,7 @@ article{
 .rest{
     background-image: url("../img/restau.jpg") !important;
 }
-.restaurant{
+.restaurant, .restaurants{
     margin-top: 76px;
 }
 .carousel{
@@ -283,4 +283,92 @@ article{
 }
 .buttonRest{
     margin-top: 61px;
+}
+iframe{
+    margin: auto;
+    width: 100%;
+    display: block;
+    padding: 20px 0 20px 0;
+}
+.adress {
+  font-size: 20px;
+  padding: 20px 0 0 0;
+  text-align: center;
+
+}
+
+/*Restaus*/
+.rests{
+    background-image: url("../img/bouf4.jpg") !important;
+}
+.miniRestau img {
+    max-width: 250px;
+    min-height: 167px;
+}
+.miniRestau {
+    width: 300px;
+    margin: auto;
+}
+.miniRestau p {
+    margin-top: 15px;
+}
+.acticleList{
+    display: inline-block;
+    background-color: #ffffffb0;
+    border-radius: 17px;
+    padding: 14px;
+    margin: 16px;
+    color: #000000;
+    cursor: pointer;
+}
+.acticleList{
+ text-align: center;
+}
+.centerArticle{
+    width: 1100px;
+    margin: auto;
+}
+.centerArticle h3{
+    text-align: center;
+
+}
+.selectTitle{
+    padding: 32px;
+    background-color: #ffffffb0;
+    border-radius: 17px;
+    font-size: 21px;
+    margin: 50px;
+}
+.filA{
+    margin: auto;
+    display: table;
+    font-size: 22px;
+    padding: 24px;
+    background-color: #ffffffb0;
+    border-radius: 17px;
+}
+.NomRestau{
+    padding: 15px 0 0 0;
+}
+.StyleRestau{
+    color: #000000;
+    font-weight: 300;
+    padding: 2px 0 13px 0;
+
+}
+.paging ul{
+    text-align: center;
+    padding: 41px;
+}
+.paging ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+
+
+/*Compte*/
+
+.comptes{
+    background-image: none !important;
 }
